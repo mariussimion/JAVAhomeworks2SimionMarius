@@ -20,9 +20,9 @@ public class FileManagement {
           FileWriter fw = new FileWriter("C:\\Users\\Marius\\Desktop\\Credits.txt");
           PrintWriter  pw = new PrintWriter(fw);
           
-          pw.println("Corse: 30 credits");
+          pw.println("Course: 30 credits");
           pw.println("Year: 120 credits");
-          pw.println("Degree:360 credits");
+          pw.println("Degree: 360 credits");
           
           pw.close();
       }catch (IOException e){
