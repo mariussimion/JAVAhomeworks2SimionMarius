@@ -1,6 +1,8 @@
 
 package Homework4;
 
+import javafx.scene.shape.Rectangle;
+
 public class GoodSomethingIsWrong {
      public static void main(String[] args) {
         Rectangle myRect = new Rectangle();
