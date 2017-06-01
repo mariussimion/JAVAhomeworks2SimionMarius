@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Manage Users Page</title>
+        <link rel="stylesheet" type="text/css" href="./eBookStoreCSS.css">
+        <link rel="stylesheet" href="eBookStoreCSS.css" type="text/css"/>
+    </head>
+
+    <body>
+
+        <form action="{contextPath}" method="POST">
+            <br> <br> <br>   
+
+            <table class="ebookstorebutton">
+                <tr>
+                    <td><input class = "pic-container" type="submit" name="manage_page" value="Manage"></td>
+                    <td><input class = "pic-container" type="submit" name="x" value="Orders"></td>
+                    <td><input class = "pic-container" type="submit" name="x" value="Log out"></td>
+                </tr>
+            </table>   
+
+            <br> <br> <br> <br>
+
+            <table border="1" width="100%">
+                <tr>
+                    <td width="4%" class="thc"> select </td>    
+                    <td width="24%" class="thc">USERNAME</td>
+                    <td width="24%" class="thc">PASSWORD</td>
+                    <td width="24%" class="thc">ROLE <input type="submit" name="admin_userroles_open" value="Admin"></td>
+                </tr>
+            </table>  
+
+            <table border="1" width="100%">    
+                <tr>
+                    <td width="4%" class="tdc"><input type="checkbox" name="admin_users_checkbox" value=""></td>
+                    <td width="24%" class="tdc"></td>
+                    <td width="24%" class="tdc"></td>
+                    <td width="24%" class="tdc"></td>
+                </tr>
+            </table>
+
+            <table class="tablecenterdwithborder">
+                <tr><td>    
+                        <table>
+                            <tr>
+                                <td> USERNAME </td>
+                                <td> <input type="text" name="admin_users_username"></td>
+                            </tr>
+                            <tr>
+                                <td> PASSWORD </td>
+                                <td> <input type="password" name="admin_users_password"></td>
+                            </tr>
+                            <tr>
+                                <td> ROLE </td>
+                                <td>
+                                    <select name="admin_user_role">
+                                        <option name="admin_users_roles" value="admin">admin</option>
+                                    </select>
+                                </td>
+                            </tr>     
+                        </table>
+
+                        <table>
+                            <tr><td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_insert" value="Insert"></td> 
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_update" value="Update"></td>
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_delete" value="Delete"></td> 
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_cancel" value="Cancel"></td>
+                            </tr>  
+                        </table>
+                    </td></tr>
+            </table>    
+        </form>
+
+    </body>   
+
+</html>
